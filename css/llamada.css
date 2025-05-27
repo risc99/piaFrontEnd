@@ -1,0 +1,91 @@
+/* LLAMADA.CSS */
+
+body {
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../imagenes/fondo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+  }
+  
+   
+  .llamada-container {
+    text-align: center;
+  }
+  
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+  
+  .user-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00cc00;
+  }
+
+  .profile-name {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .llamada-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn-mic,
+  .btn-colgar,
+  .btn-aceptar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-mic {
+    background-color: #ff007f;
+    color: #fff;
+  }
+  
+  .btn-mic.btn-mic-off {
+    background-color: #444;
+  }
+  
+  .btn-colgar {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .btn-aceptar {
+    background-color: #00cc00;
+    color: #fff;
+  }
+  
+  .btn-mic:hover {
+    background-color: #a10051;
+  }
+  
+  .btn-colgar:hover {
+    background-color: #cc0000;
+  }
+  
+  .btn-aceptar:hover {
+    background-color: #009900;
+  }

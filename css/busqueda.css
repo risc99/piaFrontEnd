@@ -1,0 +1,151 @@
+/* BUSQUEDA.CSS */
+
+body {
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  /* NAVBAR ROSITA */
+  .vertical-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #ff007f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .vertical-navbar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .vertical-navbar .nav-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .vertical-navbar .nav-link {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link i {
+    font-size: 2em;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link:hover i {
+    color: #a10051;
+  }
+  
+  .navbar-logo {
+    width: 70%;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  /* BODY */
+  .main-content {
+    margin-left: 90px;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .busqueda-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .busqueda-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .busqueda-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    background-color: #ff007f;
+    color: #fff;
+  }
+  
+  .search-bar .btn-buscar {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar .btn-buscar:hover {
+    background-color: #a10051;
+  }
+ 
+  .perfiles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .perfil-card {
+    background-color: rgba(44, 44, 44, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .perfil-card:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+  .perfil-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .perfil-name {
+    font-size: 1.2em;
+    margin: 0;
+  }

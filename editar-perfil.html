@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Perfil - TOGETHER</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/editar-perfil.css">
+
+  <link rel="icon" type="image/png" href="imagenes/TOGETHER.png">
+
+</head>
+<body>
+  
+  <!-- NAVBAR ROSITA -->
+  <nav class="vertical-navbar">
+    <div class="text-center">
+      <a class="navbar-brand" href="chat.html">
+        <img src="imagenes/TOGETHER.png"   class="navbar-logo img-fluid">
+      </a>
+    </div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="chat.html" data-bs-toggle="tooltip" title="INICIO">
+          <i class="bi bi-house-door"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="crear-grupo.html" data-bs-toggle="tooltip" title="CREAR GRUPO">
+          <i class="bi bi-plus-circle"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="busqueda.html" data-bs-toggle="tooltip" title="BUSCAR">
+          <i class="bi bi-search"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html" data-bs-toggle="tooltip" title="PERFIL">
+          <i class="bi bi-person"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recompensas.html" data-bs-toggle="tooltip" title="RECOMPENSAS">
+          <i class="bi bi-trophy"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- BODY -->
+  <div class="main-content">
+    <div class="editar-perfil-container">
+      <h1>EDITAR</h1>
+
+      <!-- FOTO DE  PERFIL -->
+      <div class="profile-picture">
+        <img src="imagenes/USER.png"  " id="profile-avatar" class="user-avatar">
+        <input type="file" id="upload-avatar" accept="image/*" style="display: none;">
+        <button class="btn btn-cambiar-foto" onclick="document.getElementById('upload-avatar').click()">Cambiar foto</button>
+      </div>
+
+      <!-- Formulario para editar información -->
+      <form class="editar-form">
+        <div class="form-group">
+          <label for="username">Nombre de usuario:</label>
+          <input type="text" id="username" class="form-control" value="Brenda01">
+        </div>
+        <div class="form-group">
+          <label for="fullname">Nombre completo:</label>
+          <input type="text" id="fullname" class="form-control" value="Brenda Elizabeth Bonilla Gonzalez">
+        </div>
+      </form>
+
+      <!-- BOTONES -->
+      <div class="editar-actions">
+        <button class="btn btn-guardar" onclick="location.href='perfil.html'">Guardar cambios</button>
+        <button class="btn btn-descartar"onclick="location.href='perfil.html'">Descartar cambios</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS JS -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/editar-perfil.js"></script>
+
+
+</body>
+</html>

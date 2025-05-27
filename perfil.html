@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOGETHER</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/perfil.css">
+
+  <link rel="icon" type="image/png" href="imagenes/TOGETHER.png">
+
+</head>
+<body>
+  
+  <!-- NAVBAR ROSITA -->
+<nav class="vertical-navbar">
+  <div class="text-center">
+    <a class="navbar-brand" href="chat.html"> <!-- AQUI MERO VA LA IMAGEN -->
+      <img src="imagenes/TOGETHER.png"   class="navbar-logo img-fluid">
+    </a>
+  </div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+           <a class="nav-link" href="chat.html" data-bs-toggle="tooltip" title="INICIO">
+        <i class="bi bi-house-door"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="crear-grupo.html" data-bs-toggle="tooltip" title="CREAR GRUPO">
+        <i class="bi bi-plus-circle"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="busqueda.html" data-bs-toggle="tooltip" title="BUSCAR">
+        <i class="bi bi-search"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="perfil.html" data-bs-toggle="tooltip" title="PERFIL">
+        <i class="bi bi-person"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="recompensas.html" data-bs-toggle="tooltip" title="RECOMPENSAS">
+        <i class="bi bi-trophy"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <!-- BODY del perfil -->
+  <div class="main-content">
+    
+    <div class="profile-container">
+      <!-- FOTO DE  PERFIL -->
+      <div class="profile-picture">
+        <img src="imagenes/USER.png"  " class="user-avatar">
+      </div>
+
+      <div class="profile-info">
+
+        <h2 class="username">Brenda01</h2>
+        <p class="name">Nombre: Brenda Elizabeth Bonilla Gonzalez</p>
+        <p class="email">Correo: brendaebg@together.com</p>
+        <p class="time-in-app">Tiempo en la app: 6 meses</p>
+      </div>
+
+<!-- RECOMPENZAS -->
+<div class="rewards-section">
+    <h3>Recompensas obtenidas</h3>
+    <div class="rewards-grid">
+
+      <div class="reward-item" data-bs-toggle="tooltip" title="Por llevar 6 meses en la app">
+        <i class="bi bi-calendar-check"></i>
+        <span>Semestre</span>
+      </div>
+
+      <div class="reward-item" data-bs-toggle="tooltip" title="Por crear un equipo">
+        <i class="bi bi-people"></i>
+        <span>En equipo</span>
+      </div>
+
+      <div class="reward-item" data-bs-toggle="tooltip" title="Por crear una cuenta en Together">
+        <i class="bi bi-emoji-smile"></i>
+        <span>Together</span>
+      </div>
+    </div>
+  </div>
+  
+      <!-- BOTONES -->
+      <div class="profile-actions">
+        <button class="btn btn-edit" onclick="location.href='editar-perfil.html'">Editar perfil</button>
+        <button class="btn btn-logout" onclick="location.href='index.html'">Cerrar sesión</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS JS -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ES PARA LOS TOOLTIPS
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* CREAR-GRUPO.CSS */
+
+body {
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  
+  /* NAVBAR ROSITA */
+  .vertical-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #ff007f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .vertical-navbar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .vertical-navbar .nav-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .vertical-navbar .nav-link {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link i {
+    font-size: 2em;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link:hover i {
+    color: #a10051;
+  }
+  
+  .navbar-logo {
+    width: 70%;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  /* BODY */
+  .main-content {
+    margin-left: 90px;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .crear-grupo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .crear-grupo-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .crear-grupo-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .grupo-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .grupo-foto {
+    text-align: center;
+  }
+  
+  .grupo-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .btn-cambiar-foto {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-cambiar-foto:hover {
+    background-color: #a10051;
+  }
+  
+  .grupo-nombre input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    background-color: #ff007f;
+    color: #fff;
+  }
+
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    background-color: #ff007f;
+    color: #fff;
+  }
+  
+  .search-bar .btn-buscar {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar .btn-buscar:hover {
+    background-color: #a10051;
+  }
+
+  .contador-integrantes {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+
+.integrantes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  
+  .integrante-item {
+    background-color: rgba(44, 44, 44, 0.7); 
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .integrante-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .integrante-info {
+    flex: 1;
+  }
+  
+  .integrante-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .btn-agregar {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-agregar:hover {
+    background-color: #a10051;
+  }
+  
+  .btn-agregar:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+  }
+
+  .crear-grupo-actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn-crear-grupo {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-crear-grupo:hover {
+    background-color: #a10051;
+  }

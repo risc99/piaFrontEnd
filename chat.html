@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOGETHER</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/chat.css">
+
+  <link rel="icon" type="image/png" href="imagenes/TOGETHER.png">
+
+
+</head>
+<body>
+  
+  <!-- NAVBAR ROSITA -->
+<nav class="vertical-navbar">
+  <div class="text-center">
+    <a class="navbar-brand" href="chat.html"> <!-- AQUI MERO VA LA IMAGEN -->
+      <img src="imagenes/TOGETHER.png"   class="navbar-logo img-fluid">
+    </a>
+  </div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+           <a class="nav-link" href="chat.html" data-bs-toggle="tooltip" title="INICIO">
+        <i class="bi bi-house-door"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="crear-grupo.html" data-bs-toggle="tooltip" title="CREAR GRUPO">
+        <i class="bi bi-plus-circle"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="busqueda.html" data-bs-toggle="tooltip" title="BUSCAR">
+        <i class="bi bi-search"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="perfil.html" data-bs-toggle="tooltip" title="PERFIL">
+        <i class="bi bi-person"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="recompensas.html" data-bs-toggle="tooltip" title="RECOMPENSAS">
+        <i class="bi bi-trophy"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <!-- NAVBAR BLANCO -->
+  <nav class="vertical-navbar-white">
+    <div class="w-100 p-3">
+        <form class="search-form">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Buscar">
+                <button class="btn btn-outline-secondary" type="button">Buscar</button>
+            </div>
+        </form>
+    </div>
+    <ul class="nav flex-column w-100">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <img src="imagenes/USER.png"  class="chat-icon me-2"> Victor39
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <img src="imagenes/GRUPO.png"  class="chat-icon me-2"> FAMILIA
+          </a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="imagenes/USER.png"  class="chat-icon me-2"> Clark
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="imagenes/USER.png"  class="chat-icon me-2"> Cristian
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <img src="imagenes/GRUPO.png"  class="chat-icon me-2"> AMIGOS
+          </a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="imagenes/USER.png" class="chat-icon me-2"> Hermy29
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="imagenes/USER.png"  class="chat-icon me-2"> PedroPascal
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <img src="imagenes/GRUPO.png"  class="chat-icon me-2"> CLASE POI
+          </a>
+      </li>
+
+
+
+
+
+    </ul>
+</nav>
+
+<!-- CONTENEDOR DE CHAT -->
+<div class="main-content">
+<div class="chat-header">
+  <div class="user-info">
+    <img src="imagenes/USER.png"  " class="user-avatar">
+    <span class="user-name">Victor39</span>
+  </div>
+
+
+
+  <!-- BOTONES DE ACCION -->
+  <div class="chat-actions">
+    <div class="chat-actions">
+      <button class="btn btn-call" data-bs-toggle="tooltip" title="Llamada" onclick="location.href='llamada.html'">
+        <i class="bi bi-telephone"></i>
+      </button>
+      <button class="btn btn-video-call" data-bs-toggle="tooltip" title="Videollamada" onclick="location.href='videollamada.html'">
+        <i class="bi bi-camera-video"></i>
+      </button>
+    </div>    
+    <button class="btn btn-options" data-bs-toggle="tooltip" title="Opciones">
+      <i class="bi bi-three-dots-vertical"></i> 
+    </button>
+    <button class="btn btn-tasks" data-bs-toggle="tooltip" title="Lista">
+      <i class="bi bi-journal-richtext"></i>
+    </button>
+  </div>
+</div>
+
+<!-- LISTA DE TAREAS -->
+<div id="taskModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <ul id="taskList"></ul>
+    <div class="task-input-container">
+      <input type="text" id="taskInput" placeholder="Ingresa tarea">
+      <select id="taskAssignee">
+          <option value="Clark">Clark</option>
+          <option value="Veck">Veck</option>
+          <option value="Sol">Sol</option>
+          <option value="Hermy">Hermy</option>
+          <option value="brenda">brenda</option>
+      </select>
+      <button id="addTaskBtn">Añadir</button>
+  </div>
+  
+  </div>
+</div>
+
+
+  <div class="chat-container">
+      <!-- MENSAJES -->
+      <div class="chat-message incoming">
+          <div class="message-content">
+              <p>Hola, ¿cómo estás?</p>
+              <span class="message-time">10:00 AM</span>
+          </div>
+      </div>
+      <div class="chat-message outgoing">
+          <div class="message-content">
+              <p>¡Hola! Estoy bien, ¿y tú?</p>
+              <span class="message-time">10:01 AM</span>
+          </div>
+      </div>
+  </div>
+
+  <!-- BARRA PARA ESCRIBIR -->
+  <div class="chat-input">
+      <input type="text" class="form-control">
+      <button class="btn btn-primary">Enviar</button>
+  </div>
+</div>
+
+  <!-- SCRIPTS JS -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/chat.js"></script>
+  <script>
+    // ES PARA LOS TOOLTIPS
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+</body>
+</html>

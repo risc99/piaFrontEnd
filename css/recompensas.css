@@ -1,0 +1,131 @@
+/* RECOMPENSAS.CSS */
+
+body {
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  /* NAVBAR ROSITA */
+  .vertical-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #ff007f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .vertical-navbar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .vertical-navbar .nav-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .vertical-navbar .nav-link {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link i {
+    font-size: 2em;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link:hover i {
+    color: #a10051;
+  }
+  
+  .navbar-logo {
+    width: 70%;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  /* BODY */
+  .main-content {
+    margin-left: 90px;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .recompensas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .recompensas-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .recompensas-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .recompensas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .recompensa-item {
+    background-color: rgba(44, 44, 44, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .recompensa-item i {
+    font-size: 2em;
+    color: #ff007f;
+  }
+  
+  .recompensa-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  
+  .recompensa-info p {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+
+  .btn-activar {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-activar:hover {
+    background-color: #a10051;
+  }

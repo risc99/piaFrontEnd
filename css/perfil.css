@@ -1,0 +1,170 @@
+/* PERFIL.CSS */
+
+body {
+  background-image: url('../imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+  
+  /* NAVBAR ROSITA */
+  .vertical-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #ff007f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .vertical-navbar ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vertical-navbar .nav-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .vertical-navbar .nav-link {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link i {
+    font-size: 2em;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .vertical-navbar .nav-link:hover i {
+    color: #a10051;
+  }
+  
+  .navbar-logo {
+    width: 70%;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  /* BODY */
+  .main-content {
+    margin-left: 90px; 
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  .profile-container {
+    background-color: rgba(44, 44, 44, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .profile-picture .user-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .rewards-section {
+    margin-top: 20px;
+  }
+  
+  .rewards-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .reward-item {
+    background-color: #ff007f;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reward-item i {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
+  .reward-item span {
+    font-size: 0.9em;
+  }
+
+  .profile-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn-edit,
+  .btn-logout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-edit {
+    background-color: #ff007f;
+    color: #fff;
+  }
+  
+  .btn-logout {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .btn-edit:hover {
+    background-color: #a10051;
+  }
+  
+  .btn-logout:hover {
+    background-color: #ff007f;
+  }

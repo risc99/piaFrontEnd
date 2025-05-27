@@ -1,0 +1,106 @@
+/* VIDEOLLAMADA.CSS */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../imagenes/fondo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  /* BODY */
+  .videollamada-container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .video-wrapper {
+    position: relative;
+    background-color: #000;
+  }
+  
+  .video-wrapper video {
+    background-color: #000;
+  }
+  
+  #remote-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .local-video {
+    width: 200px;
+    height: auto;
+    bottom: 15px;
+    right: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+
+  .video-header {
+    background-color: #333;
+  }
+  
+  .video-controls {
+    background-color: #222;
+  }
+  
+  .video-controls .btn-control {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-mic {
+    background-color: #ff007f;
+    color: #fff;
+  }
+  
+  .btn-mic.btn-mic-off {
+    background-color: #444;
+    color: gray; 
+  }
+
+  .btn-mic:hover {
+    background-color: #a10051;
+  }
+  
+
+  .btn-video {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-video.btn-video-off {
+    background-color: #444;
+    color: gray; 
+  }
+  
+  .btn-video:hover {
+    background-color: #0056b3;
+  }
+
+  .btn-colgar {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .btn-colgar:hover {
+    background-color: #cc0000;
+  }
+  

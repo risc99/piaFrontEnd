@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - TOGETHER</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gradient.css">
+
+  <link rel="icon" type="image/png" href="imagenes/TOGETHER.png">
+
+</head>
+<body>
+  
+  <!-- BODY -->
+  <div class="main-container">
+
+    <div class="presentation-container">
+      <h1>BIENVENIDO A TOGETHER</h1>
+      <p class="description">
+        Together es el lugar ideal para conectar, colaborar y crecer. Únete a la comunidad, comparte ideas, crea proyectosy haz amigos. ¡Comienza hoy mismo! 
+      </p>
+      <div class="features">
+        <p><i class="bi bi-people"></i> Conéctate con los demas</p>
+        <p><i class="bi bi-chat"></i> Colabora en proyectos</p>
+        <p><i class="bi bi-trophy"></i> Gana recompensas</p>
+      </div>
+    </div>
+
+    <div class="auth-container">
+      <div class="logo">
+        <img src="imagenes/TOGETHER.png"   class="logo-img">
+      </div>
+
+      <!-- INCIO SESION -->
+      <div class="auth-form" id="login-form">
+        <h2>INICIA SESION</h2>
+        <form action="chat.html" method="get">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+        <p class="toggle-auth">¿No tienes una cuenta? <a href="#" id="toggle-register">Regístrate</a></p>
+      </div>
+
+      <!-- REGISTRO -->
+      <div class="auth-form" id="register-form" style="display: none;">
+        <h2>REGISTRATE</h2>
+        <form action="chat.html" method="get">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nombre completo">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+        <p class="toggle-auth">¿Ya tienes una cuenta? <a href="#" id="toggle-login">Inicia Sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+    <!-- SCRIPTS JS -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

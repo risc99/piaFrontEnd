@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOGETHER</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/crear-grupo.css">
+
+  <link rel="icon" type="image/png" href="imagenes/TOGETHER.png">
+
+</head>
+<body>
+  
+  <!-- NAVBAR ROSITA -->
+<nav class="vertical-navbar">
+  <div class="text-center">
+    <a class="navbar-brand" href="chat.html"> <!-- AQUI MERO VA LA IMAGEN -->
+      <img src="imagenes/TOGETHER.png"   class="navbar-logo img-fluid">
+    </a>
+  </div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+           <a class="nav-link" href="chat.html" data-bs-toggle="tooltip" title="INICIO">
+        <i class="bi bi-house-door"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="crear-grupo.html" data-bs-toggle="tooltip" title="CREAR GRUPO">
+        <i class="bi bi-plus-circle"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="busqueda.html" data-bs-toggle="tooltip" title="BUSCAR">
+        <i class="bi bi-search"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="perfil.html" data-bs-toggle="tooltip" title="PERFIL">
+        <i class="bi bi-person"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="recompensas.html" data-bs-toggle="tooltip" title="RECOMPENSAS">
+        <i class="bi bi-trophy"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <div class="main-content">
+    <div class="crear-grupo-container">
+      <h1>CREAR GRUPO</h1>
+
+      <div class="grupo-info">
+        <div class="grupo-foto">
+          <img id="grupo-avatar" src="imagenes/grupo.png"  class="grupo-avatar">
+          <button class="btn btn-cambiar-foto" onclick="document.getElementById('file-input').click();">Cambiar foto</button>
+          <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="cambiarFoto(event)">
+        </div>
+        <div class="grupo-nombre">
+          <input type="text" class="form-control" placeholder="Nombre del grupo">
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" class="form-control" placeholder="Buscar integrantes...">
+        <button class="btn btn-buscar">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+      <div class="contador-integrantes">
+        <span>Integrantes: <span id="contador">0</span>/10</span>
+      </div>
+
+      <div class="integrantes-list">
+
+        <div class="integrante-item d-flex align-items-center">
+          <img src="imagenes/USER.png"  " class="integrante-avatar">
+          <div class="integrante-info">
+            <h3>SolDFA</h3>
+          </div>
+          <button class="btn btn-agregar ml-auto">Agregar</button>
+        </div>
+
+        <div class="integrante-item d-flex align-items-center">
+          <img src="imagenes/USER.png"  " class="integrante-avatar">
+          <div class="integrante-info">
+            <h3>Hermy29</h3>
+          </div>
+          <button class="btn btn-agregar ml-auto">Agregar</button>
+        </div>
+
+        <div class="integrante-item d-flex align-items-center">
+          <img src="imagenes/USER.png"  " class="integrante-avatar">
+          <div class="integrante-info">
+            <h3>Victor39</h3>
+          </div>
+          <button class="btn btn-agregar ml-auto">Agregar</button>
+        </div>
+
+        <div class="integrante-item d-flex align-items-center">
+          <img src="imagenes/USER.png"  " class="integrante-avatar">
+          <div class="integrante-info">
+            <h3>PedroPascal</h3>
+          </div>
+          <button class="btn btn-agregar ml-auto">Agregar</button>
+        </div>
+
+        <div class="integrante-item d-flex align-items-center">
+          <img src="imagenes/USER.png"  " class="integrante-avatar">
+          <div class="integrante-info">
+            <h3>Clark</h3>
+          </div>
+          <button class="btn btn-agregar ml-auto">Agregar</button>
+        </div>
+      </div>
+
+      <!-- BOTON CREA GRUPOS -->
+      <div class="crear-grupo-actions">
+        <a href="chat.html"> <!-- TODAVIA NO JALA NOMAS REDIRIGE -->
+          <button class="btn btn-crear-grupo">Crear Grupo</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/crear-grupo.js"></script>
+  <script>
+    // ES PARA LOS TOOLTIPS
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+</body>
+</html>
