@@ -10,14 +10,14 @@ body {
     color: #fff;
   }
   
-  /* NAVBAR ROSITA */
+  /* NAVBAR */
   .vertical-navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 90px;
     height: 100%;
-    background-color: #ff007f;
+    background-color: #7F8CAA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,14 +95,14 @@ body {
   .search-bar input {
     flex: 1;
     padding: 10px;
-    border: 2px solid #ff007f;
+    border: 2px solid #7F8CAA;
     border-radius: 5px;
-    background-color: #ff007f;
+    background-color: #B8CFCE;
     color: #fff;
   }
   
   .search-bar .btn-buscar {
-    background-color: #ff007f;
+    background-color: #B8CFCE;
     color: #fff;
     border: none;
     padding: 10px 20px;

@@ -32,7 +32,7 @@ body {
 .presentation-container h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #ff007f;
+  color: #7F8CAA;
 }
 
 .presentation-container .description {
@@ -47,7 +47,7 @@ body {
 }
 
 .presentation-container .features i {
-  color: #ff007f;
+  color: #7F8CAA;
   margin-right: 10px;
 }
 
@@ -97,19 +97,19 @@ body {
 .form-control {
   width: 100%;
   padding: 12px;
-  border: 2px solid #ff007f;
+  border: 2px solid #B8CFCE;
   border-radius: 5px;
-  background-color: #ff007f;
+  background-color: #B8CFCE;
   color: #fff;
 }
 
 .form-control:focus {
-  border-color: #a10051;
+  border-color: #800040;
   outline: none;
 }
 
 .btn-primary {
-  background-color: #ff007f;
+  background-color: #333446;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -120,7 +120,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #a10051;
+  background-color: #800040;
 }
 
 .toggle-auth {
@@ -129,7 +129,7 @@ body {
 }
 
 .toggle-auth a {
-  color: #ff007f;
+  color: #B8CFCE;
   text-decoration: none;
   transition: color 0.3s;
 }

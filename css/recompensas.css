@@ -10,14 +10,14 @@ body {
     color: #fff;
   }
   
-  /* NAVBAR ROSITA */
+  /* NAVBAR */
   .vertical-navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 90px;
     height: 100%;
-    background-color: #ff007f;
+    background-color: #7F8CAA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ body {
   
   .recompensa-item i {
     font-size: 2em;
-    color: #ff007f;
+    color: #B8CFCE;
   }
   
   .recompensa-info h3 {
@@ -116,7 +116,7 @@ body {
   }
 
   .btn-activar {
-    background-color: #ff007f;
+    background-color: #7F8CAA;
     color: #fff;
     border: none;
     padding: 8px 16px;

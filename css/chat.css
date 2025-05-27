@@ -10,14 +10,14 @@ body {
   color: #fff;
 }
 
- /* NAVBAR ROSITA */
+ /* NAVBAR */
  .vertical-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 90px;
   height: 100%;
-  background-color: #ff007f;
+  background-color: #7F8CAA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,15 +106,15 @@ body {
 
 .vertical-navbar-white .search-form .form-control {
   padding: 10px;
-  border: 2px solid #ff007f;
+  border: 2px solid #7F8CAA;
   border-radius: 4px;
 
 }
 
 .vertical-navbar-white .search-form .btn-outline-secondary {
-    background-color: #ff007f; 
+    background-color: #7F8CAA; 
     color: #fff; 
-    border-color: #ff007f; 
+    border-color: #7F8CAA; 
 }
 
 .vertical-navbar-white .search-form .btn-outline-secondary:hover {
@@ -206,14 +206,14 @@ body {
 .chat-input input {
   flex: 1;
   padding: 10px;
-  border: 2px solid #ff3198;
+  border: 2px solid #7F8CAA;
   border-radius: 5px;
-  background-color: #ff3198;
+  background-color: #B8CFCE;
   color: #ffc8e3;
 }
   
 .chat-input button {
-  background-color: #ff007f;
+  background-color: #7F8CAA;
   border: none;
   color: #fff;
   padding: 10px 20px;

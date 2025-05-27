@@ -11,14 +11,14 @@ body {
     margin: 0;
   }
   
-  /* NAVBAR ROSITA */
+  /* NAVBAR */
   .vertical-navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 90px;
     height: 100%;
-    background-color: #ff007f;
+    background-color: #7F8CAA;
     display: flex;
     flex-direction: column;
     align-items: center;
